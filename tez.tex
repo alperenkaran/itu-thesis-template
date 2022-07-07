@@ -1,0 +1,40 @@
+% enstitü adı ortalanmadıysa itutez.cls içinde "%% shift right" arayın.
+\documentclass[onluarkali,ingilizce,doktora,bez,LisansustuEgitim]{itutez}
+
+% bu dosya böylece kalabilir.
+\input{other_files/preamble1.tex}
+
+% ihtiyaç duyduğunuz paketleri ve komutları bunun içine yazın.
+% maksat kodlar temiz görünsün.
+\input{other_files/packages.tex}
+
+% bu dosyanın içini doldurun.
+\input{other_files/student_info.tex}
+
+% Hiç kimseyi bulamıyorsanız Gauss'a ithaf edin tezinizi.
+\ithaf{Dedication...}
+
+% Önsözde emeği geçen herkese teşekkür ediyoruz, mesela bana.
+\onsoz{\input{other_files/onsoz.tex} } % 
+\kisaltmalistesi{\input{other_files/kisaltmalar.tex}}
+\sembollistesi{\input{other_files/semboller.tex}}
+
+% Özeti güzel yazın keyifle okuyalım.
+\ozet{\input{other_files/ozet.tex}}
+\summary{\input{other_files/summary.tex}} 
+
+\begin{document}
+\input{chapters/ch1.tex}
+\input{chapters/ch2.tex}
+\input{chapters/ch3.tex}
+\input{chapters/ch4.tex}
+\input{chapters/ch5.tex}
+\input{chapters/ch6.tex}
+
+\bibliographystyle{itubib} 
+\bibliography{references}
+
+
+% YÖK kararıyla özgeçmişe email gibi kişisel bilgiler yazmak yasaklanmış.
+\ozgecmis{\input{other_files/ozgecmis.tex}}
+\end{document} 
